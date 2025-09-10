@@ -191,14 +191,14 @@ input:checked + label {
     background-color: #D3406A; /* Красный цвет */
     color: white; /* Белый текст для контраста */
     border-radius: 106px;
-    width: 800px;
-    height: 600px;
+    width: 1000px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .my_video_essay{
     align-self: center;
-    width: 600px;
-    height: 400px;
+    width: 900px;
+    height: 500px;
 }
