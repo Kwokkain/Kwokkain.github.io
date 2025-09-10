@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="\styles.css">
+    <title>Сайт Визитка</title>
+</head>
+<body>
+    
+    <div class="coding-banner">
+        <div class="coding-elements">
+            <span class="code-item" >О себе</span>
+            <span class="code-item" onclick="document.getElementById('exp').scrollIntoView()">Опыт</span>
+            <span class="code-item" onclick="document.getElementById('essay').scrollIntoView()">Видеоэссе</span>
+            <span class="code-item" onclick="document.getElementById('contact').scrollIntoView()">Контакты</span>
+        </div>
+    </div>
+    <!-- Остальное содержимое страницы -->
+    <div style="padding: 20px;"></div>
+        <div class="about-me">
+            <div class="slider">
+                <!-- Радиокнопки для переключения слайдов -->
+                <input type="radio" name="slider" id="slide1" checked> <!-- Выбран по умолчанию -->
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+                <input type="radio" name="slider" id="slide5">
+                <input type="radio" name="slider" id="slide6">
+
+                <!-- Контейнер всех слайдов -->
+                <div class="slides">
+                    <div class="slide"><img src="454.jpg"></div>
+                    <div class="slide"><img src="456.jpg"></div>
+                    <div class="slide"><img src="457.jpg"></div>
+                    <div class="slide"><img src="458.jpg"></div>
+                    <div class="slide"><img src="460.jpg"></div>
+
+                </div>
+                <!-- Индикаторы (точки) для переключения -->
+                <div class="controls">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                    <label for="slide5"></label>
+                </div>
+            </div>
+            <div class="rectanglered">
+                <h1 class="title">Обо мне</h1>
+                <p class="abouttext">Шуклецова Екатерина Денисовна <br>
+                    Группа 8К51<br>
+                    Люблю играть в бадминтон и компьютерные игры, читать книги и гулять. Собираю наклейки и красивые баночки от энергетиков и газировок, создаю интересные и необычные образы с помощью косметики. Еще люблю изучать языки программирования и выращивать растения.</p>
+            </div>
+        </div>
+    <div style="padding: 20px"></div>
+        <div class="experience">
+            <div class="rectanglered">
+                <h1 class="title"> Мотивационное письмо</h1>
+                <p class="letter">Почему на программу топ-ИТ должны взять именно меня? Я начинающий, но ответственный и целеустремленный программист, люблю сложные задачки, изучать что-то новое и саморазвиваться (особенно в сфере информационных технологий), очень люблю помогать другим. Также мне нравится создавать проекты, которые помогают. Я творческая личность, общительная, легко нахожу общий язык с другими, быстро схватываю информацию и люблю котиков  =^.^=
+                    Каким я вижу свое будущее в сфере ИТ? Я еще на этапе познания себя и мне интересно несколько сфер, в которых мне бы хотелось развиваться. Я надеюсь, что программа топ-ИТ поможет мне познакомиться со всеми этими сферами на достаточном уровне, чтобы в конечном итоге я могла выбрать то, что мне интереснее всего.</p>
+            </div>
+        </div>
+    <div style="padding: 20px" id="exp"></div>
+        <div class="experience" >
+            <div class="rectanglered" >
+                <h1 class="title"> Опыт</h1>
+                <p class="abouttext">gfgfgfgfgfgfgfg</p>
+            </div>
+        </div>
+    <div style="padding: 20px" id="essay"></div>
+        <div class="experience" >
+            <div class="rectanglered">
+                <h1 class="title"> Видеоэссе</h1>
+                <p class="abouttext">gfgfgfgfgfgfgfg</p>
+            </div>
+        </div>
+     <div style="padding: 20px" id="contact"></div>
+        <div class="experience" >
+            <div class="contacts">
+                <h1 class="title"> Контакты</h1>
+                <p class="abouttext">gfgfgfgfgfgfgfg</p>
+            </div>
+        </div>
+    <div style="padding: 20px"></div>
+</body>
+</html>

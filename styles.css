@@ -1,0 +1,166 @@
+.coding-banner {
+    background: #D3406A;
+    position: absolute;
+    padding: 20px;
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(180deg,rgba(255, 217, 218, 1) 15%, rgba(211, 65, 107, 0.8) 45%);
+    background-attachment: fixed; /* Фиксирует градиент на месте */
+}
+.text-content {
+    margin-bottom: 30px;
+}
+
+.be-text {
+    font-size: 3rem;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.skysmart-text {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+.coding-elements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 15px;
+    
+}
+
+.code-item {
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 40px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    transition: all 0.3s ease;
+    font-family: 'Comic Relief', "system-ui";
+}
+
+.code-item:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+img {
+    max-width: 900px;
+    max-height: 700px;
+    border-radius: 25px;
+    border: 5px solid #D3406A;
+    align-self: flex-start;
+
+}
+.about-me{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.rectanglered{
+    background-color: #D3406A; /* Красный цвет */
+    color: white; /* Белый текст для контраста */
+    padding: 20px;
+    border-radius: 106px;
+    width: 700px;
+    height: 700px;
+    align-self: center;
+}
+.abouttext{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Comic Relief', "system-ui";
+    font-size: 35px;
+}
+.letter{
+    text-align: center;
+    font-family: 'Comic Relief', "system-ui";
+    font-size: 25px;
+}
+.title{
+    text-align: center;
+    font-size: 50 px;
+    font-family: 'Comic Relief', "system-ui";
+}
+.experience{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contacts{
+    background-color: #D3406A; /* Красный цвет */
+    color: white; /* Белый текст для контраста */
+    padding: 20px;
+    border-radius: 106px;
+    width: 800px;
+    height: 200px;
+    align-self: center;
+}
+.slider {
+    max-width: 40%; /* Фиксированная ширина */
+    overflow: hidden; /* Скрываем выходящие за границы изображения */
+    position: relative;
+}
+
+/* Контейнер, в котором будут находиться все слайды */
+.slides {
+    display: flex; /* Располагаем слайды в ряд */
+    width: 500%; /* Делаем ширину в три раза больше (по количеству слайдов) */
+    transition: transform 0.5s ease-in-out; /* Плавное переключение слайдов */
+}
+
+/* Каждый отдельный слайд */
+.slide {
+    display: flex;
+    width: 100%; /* Каждый слайд занимает всю ширину контейнера */
+    justify-content: center;
+}
+input[type="radio"] {
+    display: none;
+}
+#slide1:checked ~ .slides { transform: translateX(0%); }   /* Первый слайд */
+#slide2:checked ~ .slides { transform: translateX(-20%); } /* Второй слайд */
+#slide3:checked ~ .slides { transform: translateX(-40%); } 
+#slide4:checked ~ .slides { transform: translateX(-60%); } 
+#slide5:checked ~ .slides { transform: translateX(-80%); } 
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Добавляем отступ сверху */
+}
+
+/* Стиль для точек переключения */
+.controls label {
+    display: inline-block; /* Размещаем точки в строку */
+    width: 15px; /* Размер точки */
+    height: 15px;
+    background: gray; /* Серый цвет точки */
+    border-radius: 50%; /* Делаем точки круглыми */
+    margin: 5px; /* Добавляем небольшой отступ между ними */
+    cursor: pointer; /* Делаем курсор в виде руки при наведении */
+}
+
+/* Меняем цвет активной точки при выборе слайда */
+input:checked + label {
+    background: black;
+}
