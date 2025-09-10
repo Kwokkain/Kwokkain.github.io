@@ -1,4 +1,4 @@
-.coding-banner {
+.about-me-banner {
     background: #D3406A;
     position: absolute;
     padding: 20px;
@@ -35,7 +35,7 @@ body {
     margin-left: 15px;
 }
 
-.coding-elements {
+.about-me-elements {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -44,7 +44,7 @@ body {
     
 }
 
-.code-item {
+.me-item {
     background: rgba(255, 255, 255, 0.2);
     cursor: pointer;
     padding: 10px 20px;
@@ -109,16 +109,18 @@ img {
 .contacts{
     background-color: #D3406A; /* Красный цвет */
     color: white; /* Белый текст для контраста */
-    padding: 20px;
     border-radius: 106px;
     width: 800px;
     height: 200px;
-    align-self: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
 }
 .slider {
     max-width: 40%; /* Фиксированная ширина */
     overflow: hidden; /* Скрываем выходящие за границы изображения */
     position: relative;
+    
 }
 
 /* Контейнер, в котором будут находиться все слайды */
@@ -163,4 +165,40 @@ input[type="radio"] {
 /* Меняем цвет активной точки при выборе слайда */
 input:checked + label {
     background: black;
+}
+.tg{
+    background-color: #D3406A; /* Красный цвет */
+    color: white; /* Белый текст для контраста */
+    border-radius: 106px;
+    width: 800px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tg_qr{
+    align-self: center;
+}
+.exp_text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Comic Relief', "system-ui";
+    font-size: 40px;
+}
+.vid{
+    background-color: #D3406A; /* Красный цвет */
+    color: white; /* Белый текст для контраста */
+    border-radius: 106px;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.my_video_essay{
+    align-self: center;
+    width: 600px;
+    height: 400px;
 }

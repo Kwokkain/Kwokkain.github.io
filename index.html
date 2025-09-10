@@ -8,12 +8,12 @@
 </head>
 <body>
     
-    <div class="coding-banner">
-        <div class="coding-elements">
-            <span class="code-item" >О себе</span>
-            <span class="code-item" onclick="document.getElementById('exp').scrollIntoView()">Опыт</span>
-            <span class="code-item" onclick="document.getElementById('essay').scrollIntoView()">Видеоэссе</span>
-            <span class="code-item" onclick="document.getElementById('contact').scrollIntoView()">Контакты</span>
+    <div class="about-me-banner">
+        <div class="about-me-elements">
+            <span class="me-item" >О себе</span>
+            <span class="me-item" onclick="document.getElementById('exp').scrollIntoView()">Опыт</span>
+            <span class="me-item" onclick="document.getElementById('essay').scrollIntoView()">Видеоэссе</span>
+            <span class="me-item" onclick="document.getElementById('contact').scrollIntoView()">Контакты</span>
         </div>
     </div>
     <!-- Остальное содержимое страницы -->
@@ -65,21 +65,29 @@
         <div class="experience" >
             <div class="rectanglered" >
                 <h1 class="title"> Опыт</h1>
-                <p class="abouttext">gfgfgfgfgfgfgfg</p>
+                <p class="exp_text">У меня нет дипломов, подтверждающих призовые места, но в последнее время я активно участвую в различных мероприятиях. Например, в прошлом году я ездила идеятон от T1, сейчас принимаю участие в большом экономическом геймджеме, была волонтером на Городе IT</p>
             </div>
         </div>
     <div style="padding: 20px" id="essay"></div>
         <div class="experience" >
-            <div class="rectanglered">
+            <div class="vid">
                 <h1 class="title"> Видеоэссе</h1>
-                <p class="abouttext">gfgfgfgfgfgfgfg</p>
+                <iframe src="VID_20250910_223437.mp4" class="my_video_essay"></iframe>
+            </div>
+        </div>
+    <div style="padding: 20px" id="essay"></div>
+        <div class="experience" >
+            <div class="tg">
+                <h1 class="title">Телеграмм Канал</h1>
+                <img src="qr-code.png" class="tg_qr" height="200px" weight="200px" >
             </div>
         </div>
      <div style="padding: 20px" id="contact"></div>
         <div class="experience" >
             <div class="contacts">
                 <h1 class="title"> Контакты</h1>
-                <p class="abouttext">gfgfgfgfgfgfgfg</p>
+                <a href="mailto:eds25@tpu.ru" class="abouttext"> eds25@tpu.ru</a>
+                <a href="tel:+79049619593" class="abouttext">+79049619593</a>
             </div>
         </div>
     <div style="padding: 20px"></div>
